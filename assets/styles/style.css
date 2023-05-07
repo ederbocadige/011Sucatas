@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.section-title,
+.section-desc{
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-title {
+    font-size: 2rem;
+    font-weight:700;
+    color: #146C94;
+    padding-top: 20px;
+}
+.section-desc{
+    font-size: 1rem;
+    font-weight:500;
+    color: #19A7CE;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+header {
+    background-color: #F6F1F1;
+}
+section{
+    padding: 20px 0;
+}
+.section-header {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section-header--logo img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.section-header--menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.section-header--menu ul{
+    display: flex;
+    
+}
+.section-header--menu li {
+    list-style: none;
+    
+}
+.section-header--menu li a {
+    height: 100px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4px solid #F6F1F1;
+}
+.section-header--menu li a:hover {
+    color:#146C94;
+    border-bottom: 4px solid #146C94;
+    transition: 1.2s;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #19A7CE, 0 0 30px #19A7CE, 0 0 40px #19A7CE, 0 0 55px #19A7CE, 0 0 75px #19A7CE;
+}
+.banner {
+    height: calc(100vh - 105px);
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    
+}
+.banner-area {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background-color: #F6F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    opacity: 0.7;
+    border-radius: 25px;
+
+}
+.banner-area h1{
+    color: #146C94;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 50px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #19A7CE, 0 0 30px #19A7CE, 0 0 40px #19A7CE, 0 0 55px #19A7CE, 0 0 75px #19A7CE;
+    opacity: none;
+}
+.banner-area h2 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 30px;
+    opacity: none;
+    
+}
+.banner-area span {
+    color: #19A7CE;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #146C94, 0 0 30px #146C94, 0 0 40px #146C94, 0 0 55px #146C94, 0 0 75px #146C94;
+}
+.tel,
+.whats a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.tel img,
+.whats img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.tel h2,
+.whats h2 {
+    text-align: center;
+    padding: 10px;
+}
+.banner-area--info {
+    width: 430px;
+}
+
+
+
+
+/*estilo - sobre nós
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left{
+    flex: 1;
+}
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+}
+.section-aboutus--right{
+    width: 520px;
+    text-align: center;   
+}
+.section-aboutus--right img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+*/
+
+
+
+
+/*produtos*/
+.tiposSucatas {
+    background-color: #F6F1F1;
+}
+.section-projects--photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 30px;
+    justify-content: center;
+    margin: auto;
+}
+.section-projects--photo {
+    width: 280px;
+    
+}
+.section-projects--photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.sections-projects--photoinfo {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.sections-projects--photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+.section-projects--photoarea:hover .sections-projects--photoinfo,
+.section-projects--photoarea .sections-projects--photoinfo.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*Artigo*/
+.box.artigo {
+    background-color: #fff;
+}
+.artigo-sucata p {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+
+
+/*Contato*/
+.contact {
+    background-color: #F6F1F1
+}
+
+
+/*rodapé*/
+
+.footer {
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0 ;
+    gap: 10px;
+    width: 100%;
+}
+.footer h2, h4, a{
+    color: #F6F1F1 ;
+}
+.footer h2 {
+    color: #146C94;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #19A7CE, 0 0 30px #19A7CE, 0 0 40px #19A7CE, 0 0 55px #19A7CE, 0 0 75px #19A7CE;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.footer h4 {
+    font-size: 0.55rem;
+}
+
+
+
+@media (min-width: 1024px) and (max-width:1150px){
+    .box{
+        max-width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-header {
+        max-width: 80%;
+    }
+    .banner-area h1{
+        padding-top: 10px;
+    }
+
+}
+
+@media (min-width: 850px) and (max-width:1024px){
+    .box{
+        max-width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-header {
+        max-width: 80%;
+    }
+    .banner-area h1{
+        padding-top: 10px;
+    }
+    .section-header--menu li a {
+        font-size: 18px;
+        margin-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .section-aboutus--right{
+        width: 320px;
+        text-align: center;   
+    }
+    .section-aboutus--right img{
+        width: 300px;
+    }
+    .footer{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+}
+@media (max-width: 850px) {
+    .section-header {
+        max-width: 80%;
+    }
+    .section-header--menu li a {
+        display: none;
+    }
+    .box{
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .banner-area h1{
+        
+        text-transform: uppercase;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .banner-area h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .tel,
+    .whats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tel img,
+    .whats img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .tel h2,
+    .whats h2 {
+        text-align: center;
+        padding: 10px;
+    }
+    .banner-area--info {
+        width: 100%;
+    }
+    .section-aboutus{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-aboutus--right{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;   
+    }
+    .section-aboutus--right img{
+        width: 80%;
+    }
+    .contact h2{
+        font-size:20px ;
+    }
+    .footer{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+}
